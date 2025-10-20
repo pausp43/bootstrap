@@ -38,14 +38,14 @@
 
 
         <form action="">
-            <label for="">Nom:</label><br>
-            <input type="text" name="nom" id="nom"><br>
+            <label for="">Nombre:</label><br>
+            <input class="rounded-3" type="text" name="nom" id="nom"><br>
             <label for="">Email:</label><br>
-            <input type="email" name="email" id="email"><br>
+            <input class="rounded-3" type="email" name="email" id="email"><br>
             <label for="">¿Cuál es el máximo goleador histórico de la UEFA Champions League? Debes escribir nombre y primer apellido.</label><br>
-            <input type="text" name="resposta" id="golejador"></input><br><br>
+            <input class="rounded-3" type="text" name="resposta" id="golejador"></input><br><br>
             <footer>
-                <button type="submit" onclick="validarLogin()">Enviar</button>
+                <button class="rounded-3" type="submit" onclick="validarLogin()">Enviar</button>
             </footer>
             
         </form>
@@ -63,21 +63,21 @@
             const golejador = document.getElementById("golejador").value;
 
             if (nom == ""){
-                alert("El camp usuari és obligatori");
+                alert("El campo usuario es obligatorio");
                 return;
             }
 
             if (email == ""){
-                alert("El camp email és obligatori");
+                alert("El campo email es obligatorio");
                 return;
             }
 
             if (golejador == GOLEJADOR_VALID){
-                alert("Resposta correcte");
+                alert("Respuesta correcta");
             }
 
             if (golejador != GOLEJADOR_VALID){
-                alert("Resposta incorrecte");
+                alert("Respuesta incorrecta");
             }
 
         }
